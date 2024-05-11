@@ -1,0 +1,216 @@
+#light-logo
+{
+    width: 12%;
+    position: fixed;
+}
+#dark-logo
+{
+    width: 12%;
+    position: fixed;
+    display: none;
+}
+.prefix
+{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+}
+
+button:hover,
+a :hover
+{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+.prefix-text
+{
+    font-family: 'Josefin Sans';
+}
+.prefix, .prefix-text
+{
+    display: inline-block;
+    margin: 0;
+}
+a
+{
+  color: inherit;
+  text-decoration: none;
+}
+.pre
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px;
+    
+}
+
+.intro
+{
+    max-width: 100%; 
+    display: block; 
+    margin: auto; 
+}
+.intro-2
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.space
+{
+    height: 10%;
+}
+.container1
+{
+    display:inline-flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50vh;
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin: auto;
+}
+#spec1
+{
+    color: white;
+    transform: rotate(90deg);
+    font-size: 4vw;
+    font-weight:bold;
+    white-space: nowrap;
+}
+.img1
+{
+    margin-left: -5%;
+    height: auto;
+    width: 70%;
+}
+#spec2
+{
+    color: white;
+    font-size: 50px;
+    font-weight:bold;
+    margin: auto 3%;
+}
+.categories
+{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50vh;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 3%; 
+}
+
+
+  .table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .inline-table {
+    border-collapse: collapse;
+    margin-right: 1%; 
+  }
+  
+  .inline-table td {
+    padding: 0; 
+    margin: 0; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inline-table img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+
+  body {
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    height: 2000px; 
+    padding: 0;
+    transition: background-color 1.0s ease;
+    overflow: auto;
+  }
+  
+  footer
+  {
+    color: white;
+    height: 10%;
+    width: 100%;
+  }
+  
+  .layer-1
+  {
+    background-image: url('Group\ 29.svg'); /* Add your image path here */
+    background-size: cover; /* Adjust to your preference */
+    background-position: center;
+    height: 230%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .layer-1 {
+        display: block; /* Change display to block for vertical stacking */
+         /* Hide horizontal scroll on smaller screens */
+    }
+}
+
+  .table1, .table2
+  {
+    margin: 6%;
+    border: none;
+    font-size: larger;
+  }
+  .table1
+  {
+    line-height: 1.5;
+  }
+  .table2
+  {top: 0;
+    padding: 10px;
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table2 td
+  {
+    padding: 10px;
+  }
+
+  footer img
+  {
+    margin-bottom: -12%;
+    padding: 5%;
+    height: 100%;
+  }
+
+  .layer-2
+  {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    padding: 5%;
+    margin: 1%;
+  }
+ .social
+ {
+  height: min-content;
+ }
+  .app
+  {
+    height: max-content;
+  }

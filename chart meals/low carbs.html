@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Carb Meals</title>
+    <link rel="stylesheet" href="low carbs.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <img id="dark-logo" src="dark.svg">
+    </div><br>
+    <div class="container">
+        <!-- Meal cards will be dynamically generated here -->
+    </div>
+
+
+    <div class="parallax">
+        <div class="parallax-bg"></div>
+        <div class="parallax-content">
+            <img src="chole.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Pop-up window -->
+    <!-- Pop-up window -->
+    <div class="popup" id="popup" style="display: none;">
+        <div class="popup-content">
+            <h2 id="mealName"></h2>
+            <div class="content-wrapper">
+                <div class="image-container">
+                    <img src="" alt="" id="popupImage">
+                </div>
+                <div class="info-container">
+                    <div id="mealDetails"></div><br>
+                    <div id="mealPrice"></div>
+                    <div class="button-container">
+                        <button class="buy-now-button" onclick="buyNow('${mealId}'); green(this)">Buy Now</button>
+                        <button class="cart-button">Add to Cart</button>
+                        <button onclick="closePopup()" id="close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="popupOverlay" class="popup-overlay" onclick="closePopup()"></div>
+
+
+    <script src="low carbs.js"></script>
+
+</body>
+
+</html>

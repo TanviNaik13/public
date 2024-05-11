@@ -1,0 +1,210 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
+}
+body {
+    font-family: 'Josefin Sans';
+    font-weight: bold;    
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+#dark-logo
+{
+    width: 12%;
+    position: fixed;
+}
+.container {
+    max-width: 100%;
+    margin-top: 3%;
+    padding: 20px;
+    text-align: center;
+}
+.meal {
+    width: 30%;
+    margin: 10px;
+    
+    padding: 20px;
+    border: 3px solid #7BE0F7;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-radius: 14%;
+}
+.meal-container {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12%;
+    color: black;
+}
+.meal img {
+    width: 85%;
+    height: 300px;
+    display: block;
+    padding: 3%;
+    margin: 0 auto;
+    border-radius: 14%;
+}
+.meal h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+.price{
+    text-align: right;
+    margin-right: 5%;
+    padding-right: 4%;
+    font-size:x-large
+}
+.price:before {
+    content: "\20B9";
+}
+.button-container {
+    text-align: left; 
+}
+
+.buy-now-button,
+.cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #000000;
+    color: #fff; 
+    border: 3px solid rgb(247, 255, 2);
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buy-now-button:hover,
+.cart-button:hover {
+    background-color: #ffffff; 
+    color: black;
+}
+.cart-button:hover
+{
+    background-image: url('Shopping cart dark.svg');
+}
+.cart-button {
+   float: right;
+   border: 3px solid rgb(255, 255, 255);
+   background-image: url('Shopping cart.svg'); /* URL of the image */
+   background-repeat: no-repeat; /* Prevent the image from repeating */
+   background-position: 10px center; /* Position the image */
+   background-size: 20px;
+   padding-left: 10%;
+}
+
+.parallax {
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    overflow-x: hidden;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.parallax-content {
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.popup {
+    display: none; /* Hide the pop-up by default */
+    position: fixed;
+    top: 50%;
+    height: 80%;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(8px);
+    color: #e4e4e4;
+    padding: 20px;
+    border: 5px solid rgb(85, 85, 85);
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure the pop-up appears above other content */
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(8px);
+    z-index: 99; /* Ensure it's below the popup */
+    display: none;
+  }
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.image-container {
+    flex: 0 0 auto; /* Make it not grow or shrink */
+    margin-right: 20px; /* Add space between image and info */
+}
+
+.info-container {
+    /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-container {
+    display: flex;
+}
+
+.button-container button {
+    margin-right: 10px;
+}
+
+.popup-content img {
+    margin-right: 20%;
+    width: 65vh;
+    height: 60vh;
+    border-radius: 8%;
+}
+
+#close {
+    font-family: 'Josefin Sans';
+    position: relative;
+    top:120%;
+    height: 5vh;
+    right: 0px;
+    width: 100px;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 50px;
+    border: 2px solid white;
+    color: white;
+}
+
+#mealName,#mealDetails,#mealPrice{
+    font-size: 3.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    
+}

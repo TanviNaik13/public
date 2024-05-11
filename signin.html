@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In Form</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="FAV.png">
+  <!-- Include Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js"></script>
+<!-- Your index.js script -->
+<script type="module" src="signin.js" defer></script>
+
+</head>
+<body>
+  <img id="dark-logo" src="dark.svg">
+  <div class="container">
+    <form class="signin-form" id="contactForm">
+      <h2>SIGN IN</h2>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+      </div>
+      <button type="submit" id="submit">Sign in</button>
+      <p>Not a user? <a href="index.html">Create an Account!</a></p>
+
+    </form>
+  </div>
+
+</body>
+</html>
